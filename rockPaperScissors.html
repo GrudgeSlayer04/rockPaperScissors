@@ -3,10 +3,36 @@
 <head>
     <title>Page Title</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="rockPaperScissors.css">
     <script type="text/javascript" src="rockPaperScissors.js"></script>
 </head>
 <body>
-    <p>Click to play 'Rock, Paper, Scissors'</p>
-    <input type="button" onclick="computerPlay" value="Display">
+  <div class="instructions">
+    <p>Click a button play 'Rock, Paper, Scissors'</p>
+  </div>
+  <div class="buttonsDiv">
+    <!-- <input type="button" onclick="computerPlay" value="Display"> -->
+    <button id="rockSelection" onclick="test">Rock</button>
+    <button id="paperSelection">Paper</button>
+    <button id="scissorsSelection">Scissors</button>
+  </div>
+  <div class="results">
+    <p id="resultsActual">test</p>
+  </div>
+  <div class="scoreboard">
+    <p id="scoreboardActual">scoreboard</p>
+  </div>
+
+<script>
+    document.getElementById("rockSelection").addEventListener(
+      "click", playerRock);
+    
+    document.getElementById("paperSelection").addEventListener(
+      "click", playerPaper);
+
+    document.getElementById("scissorsSelection").addEventListener(
+      "click", playerScissors);
+</script>
+
 </body>
 </html>

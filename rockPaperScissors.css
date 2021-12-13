@@ -1,0 +1,44 @@
+html {
+    background-color: burlywood;
+}
+
+.instructions {
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.buttonsDiv {
+    margin: auto;
+    margin-top : 10px;
+    width: 12%;
+    border: 3px solid blue;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-tracks: center;
+}
+
+.buttonsDiv > button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.results {
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    text-align: center;
+    border: 3px solid red;
+}
+
+.scoreboard {
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    text-align: center;
+    border: 3px solid yellow;
+}
